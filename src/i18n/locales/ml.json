@@ -1,0 +1,372 @@
+{
+  "app": {
+    "name": "Indic Translator"
+  },
+  "setup": {
+    "aria": {
+      "main": "Session Setup",
+      "conversationOptions": "Conversation Options"
+    },
+    "tagline": {
+      "line1": "Speak naturally.",
+      "line2": "Understand everyone."
+    },
+    "subtitle": "Real-time AI-powered multilingual conversations across Indian languages.",
+    "myLanguage": {
+      "label": "MY LANGUAGE",
+      "aria": "Select your primary language"
+    },
+    "create": {
+      "aria": { "card": "Create Conversation Card" },
+      "title": "Create Conversation",
+      "description": "Generate a secure session code and invite another participant to speak in real time.",
+      "button": "Create Conversation",
+      "buttonLoading": "Creating…"
+    },
+    "join": {
+      "aria": { "card": "Join Conversation Card" },
+      "title": "Join Conversation",
+      "description": "Connect with an existing participant",
+      "button": "Join Conversation",
+      "buttonLoading": "Validating…"
+    },
+    "code": {
+      "label": "Conversation Code",
+      "placeholder": "AAXYRZ"
+    }
+  },
+  "layout": {
+    "app": {
+      "aria": "Indic Translator Native Desktop Application"
+    },
+    "sidebar": {
+      "aria": "Main Navigation",
+      "returnToSetupTitle": "Return to Session Setup",
+      "brand": "Indic Platform",
+      "version": "Live Multilingual v1.0"
+    },
+    "nav": {
+      "translate": "Translate",
+      "sessions": "Sessions",
+      "settings": "Settings"
+    },
+    "topBar": {
+      "recentSessions": "Recent Sessions",
+      "settings": "Settings",
+      "waitingRoom": "Waiting Room",
+      "liveTranslation": "Live Translation",
+      "languageSelector": "Language Selector",
+      "selectSourceLanguage": "Select source language",
+      "selectDestinationLanguage": "Select destination language"
+    }
+  },
+  "waiting": {
+    "aria": { "main": "Waiting Room" },
+    "status": {
+      "waitingForParticipant": "Waiting for another participant…"
+    },
+    "demo": {
+      "simulateJoinTitle": "Simulate partner joining the session",
+      "simulateJoinButton": "Partner Joined (Click to simulate transition) →"
+    },
+    "mic": {
+      "standbyTitle": "Microphone standby",
+      "hint": "Translation will begin automatically once another participant joins."
+    },
+    "code": {
+      "aria": { "card": "Conversation Code Card" },
+      "label": "Conversation Code",
+      "hint": "Share this 6-character code with your conversation partner"
+    },
+    "share": {
+      "title": "Indic Translator Conversation",
+      "text": "Join my live speech translation session on Indic Translator. Session code: {{code}}",
+      "aria": "Share session link",
+      "button": "Share"
+    },
+    "copy": {
+      "aria": "Copy conversation code",
+      "copied": "Copied",
+      "button": "Copy Code"
+    },
+    "qr": {
+      "aria": "Generate QR Code",
+      "button": "Generate QR",
+      "modal": {
+        "title": "Scan to Join",
+        "closeAria": "Close QR dialog",
+        "codeLabel": "Conversation Code",
+        "dismiss": "Dismiss"
+      }
+    },
+    "connection": {
+      "aria": "Device and connection status",
+      "connectionLabel": "Connection",
+      "connected": "Connected",
+      "microphoneLabel": "Microphone",
+      "microphoneReady": "Ready",
+      "languageLabel": "Language"
+    }
+  },
+  "translator": {
+    "workspace": { "aria": "Live Translation Workspace" },
+    "languageSelector": { "aria": "Language Selector" },
+    "language": {
+      "from": "FROM",
+      "to": "TO",
+      "selectSourceAria": "Select source language",
+      "selectDestinationAria": "Select destination language"
+    },
+    "swap": {
+      "aria": "Swap source and destination languages",
+      "title": "Swap languages"
+    },
+    "conversation": { "aria": { "feed": "Conversation Feed" } },
+    "original": { "aria": { "card": "Original Speech Card" } },
+    "translation": {
+      "aria": { "card": "Translated Speech Card" },
+      "badge": "· Translation",
+      "actionsAria": "Translation actions",
+      "copyTitle": "Copy text",
+      "copyAria": "Copy translation",
+      "playTitle": "Play audio",
+      "playAria": "Play translated speech",
+      "shareTitle": "Share",
+      "shareAria": "Share translation"
+    },
+    "mic": {
+      "hint": "Click mic or spacebar to mute",
+      "ariaMuted": "Microphone muted. Click to turn on.",
+      "ariaActive": "Microphone on. Click to mute.",
+      "turnOnTitle": "Turn Microphone On",
+      "muteTitle": "Mute Microphone",
+      "statusMuted": "Mic Muted",
+      "statusTranslating": "Translating…",
+      "statusListening": "Listening"
+    },
+    "demo": {
+      "nextTurnTitle": "Simulate incoming spoken speech turn",
+      "nextTurnButton": "Next Turn ↵"
+    },
+    "status": {
+      "listening": "Listening",
+      "translating": "Translating",
+      "connected": "Connected",
+      "offline": "Offline"
+    }
+  },
+  "sessions": {
+    "aria": { "panel": "Sessions history" },
+    "title": "Recent Sessions",
+    "subtitle": "Past conversational dialogues preserved in local IndexedDB",
+    "turnCount": "{{count}} turns",
+    "empty": "No sessions yet"
+  },
+  "settings": {
+    "aria": { "panel": "Settings panel" },
+    "title": "Preferences",
+    "subtitle": "Refined controls for audio capture, playback cadence, and script display",
+    "section": {
+      "audioInput": "Audio Input",
+      "speechFlow": "Speech Flow",
+      "typography": "Typography & Display",
+      "backend": "Backend Architecture & Connectivity"
+    },
+    "audio": {
+      "microphoneSource": {
+        "label": "Microphone Source",
+        "description": "Hardware device used for ambient speech capture"
+      },
+      "device": {
+        "default": "Default System Microphone",
+        "studioUsb": "Studio USB Microphone",
+        "builtInArray": "Built-in Array"
+      },
+      "ambientCancellation": {
+        "label": "Ambient Cancellation",
+        "description": "Isolates human vocal frequencies while suppressing background noise"
+      }
+    },
+    "speech": {
+      "autoPlay": {
+        "label": "Auto-Play Spoken Translations",
+        "description": "Speaks translated sentences naturally upon completion"
+      },
+      "cadence": {
+        "label": "Speech Cadence",
+        "description": "Pacing for cross-linguistic clarity",
+        "deliberate": "Deliberate",
+        "natural": "Natural",
+        "brisk": "Brisk"
+      }
+    },
+    "typography": {
+      "nativeIndic": {
+        "label": "Native Indic Typography",
+        "description": "Renders authentic script ligatures using Noto Sans regional fonts"
+      }
+    },
+    "backend": {
+      "pipeline": {
+        "label": "Pipeline Engine",
+        "description": "Select the translation pipeline driver"
+      },
+      "mode": {
+        "simulation": "Standalone / Simulation Mode",
+        "websocket": "Live WebSocket (FastAPI / Node / Go)",
+        "webspeech": "Browser WebSpeech (Zero-Server)"
+      },
+      "endpoint": {
+        "label": "WebSocket Endpoint URL",
+        "description": "Any backend implementing standard JSON stream events (e.g., FastAPI, Express, Bhashini, Whisper)",
+        "placeholder": "ws://localhost:8000/v1/stream"
+      }
+    }
+  },
+  "share": {
+    "modal": {
+      "title": "Share Translation",
+      "closeAria": "Close dialog",
+      "copyFullTranscript": "Copy Full Transcript",
+      "exportTextDocument": "Export as Text Document"
+    },
+    "copyTranscriptTemplate": "Original ({{originalLang}}):\n{{originalText}}\n\nTranslation ({{translationLang}}):\n{{translationText}}",
+    "exportDocumentTemplate": "INDIC TRANSLATOR — LIVE SPEECH TRANSCRIPT\nDate: {{date}}\nTime: {{time}}\n\n[{{originalLang}}]\n{{originalText}}\n\n[{{translationLang}}]\n{{translationText}}\n"
+  },
+  "toast": {
+    "inviteLinkCopied": "Invite link copied to clipboard",
+    "sessionLinkCopiedFallback": "Copied session link",
+    "conversationCodeCopied": "Conversation code copied",
+    "codeCopiedFallback": "Copied code",
+    "copiedToClipboard": "Copied to clipboard",
+    "copiedTranslationFallback": "Copied translation",
+    "transcriptCopied": "Transcript copied to clipboard",
+    "transcriptCopiedFallback": "Copied transcript",
+    "exportedSessionNotes": "Exported session notes",
+    "languageSetTo": "Language set to {{name}}",
+    "sourceSetTo": "Source set to {{name}}",
+    "targetSetTo": "Target set to {{name}}",
+    "invalidSessionCode": "Please enter a valid session code",
+    "connectingToSession": "Connecting to session {{code}}…",
+    "participantJoined": "Participant joined the conversation"
+    ,"settingsSaved": "Settings saved"
+    ,"loadedSession": "Loaded {{title}}"
+  },
+  "common": {
+    "language": {
+      "englishFallback": "English"
+    }
+  },
+  "ui": {
+    "setup": {
+      "createCardAria": "Create Conversation Card",
+      "joinCardAria": "Join Conversation Card",
+      "joinTitle": "Join Conversation",
+      "joinDescription": "Connect with an existing participant",
+      "joinButton": "Join Conversation",
+      "joinLoading": "Validating…",
+      "createCardAria": "Create Conversation Card",
+      "createTitle": "Create Conversation",
+      "createDescription": "Generate a secure session code and invite another participant to speak in real time.",
+      "createButton": "Create Conversation",
+      "createLoading": "Creating…",
+      "conversationCode": "Conversation Code"
+    },
+    "waiting": {
+      "roomAria": "Waiting Room",
+      "simulateJoinTitle": "Simulate partner joining the session",
+      "simulateJoinButton": "Partner Joined (Click to simulate transition) →",
+      "microphoneStandby": "Microphone standby",
+      "translationStarts": "Translation will begin automatically once another participant joins.",
+      "connectionAria": "Device and connection status",
+      "connection": "Connection",
+      "connected": "Connected",
+      "microphone": "Microphone",
+      "ready": "Ready",
+      "language": "Language",
+      "codeCardAria": "Conversation Code Card",
+      "shareSessionLinkAria": "Share session link",
+      "share": "Share",
+      "copyCodeAria": "Copy conversation code",
+      "copy": "Copy Code",
+      "copied": "Copied",
+      "generateQrAria": "Generate QR Code",
+      "generateQr": "Generate QR",
+      "closeQrAria": "Close QR dialog",
+      "scanToJoin": "Scan to Join",
+      "dismiss": "Dismiss",
+      "conversationCode": "Conversation Code",
+      "waitingForParticipant": "Waiting for another participant…"
+    },
+    "translator": {
+      "workspaceAria": "Live Translation Workspace",
+      "conversationFeedAria": "Conversation Feed",
+      "originalSpeechCardAria": "Original Speech Card",
+      "translatedSpeechCardAria": "Translated Speech Card",
+      "translationBadge": "· Translation",
+      "translationActionsAria": "Translation actions",
+      "copyText": "Copy text",
+      "copyTranslation": "Copy translation",
+      "playAudio": "Play audio",
+      "playTranslatedSpeech": "Play translated speech",
+      "share": "Share",
+      "shareTranslation": "Share translation",
+      "swapLanguagesAria": "Swap source and destination languages",
+      "swapLanguagesTitle": "Swap languages",
+      "micHint": "Click mic or spacebar to mute",
+      "micMutedAria": "Microphone muted. Click to turn on.",
+      "micActiveAria": "Microphone on. Click to mute.",
+      "turnMicrophoneOn": "Turn Microphone On",
+      "muteMicrophone": "Mute Microphone",
+      "micMuted": "Mic Muted",
+      "translating": "Translating…",
+      "listening": "Listening",
+      "simulateSpeechTitle": "Simulate incoming spoken speech turn",
+      "nextTurn": "Next Turn ↵"
+    },
+    "sessions": {
+      "historyAria": "Sessions history",
+      "turnCount": "{{count}} turns"
+    },
+    "settings": {
+      "panelAria": "Settings panel",
+      "title": "Preferences",
+      "subtitle": "Refined controls for audio capture, playback cadence, and script display",
+      "audioInput": "Audio Input",
+      "microphoneSource": "Microphone Source",
+      "microphoneDescription": "Hardware device used for ambient speech capture",
+      "defaultMicrophone": "Default System Microphone",
+      "studioMicrophone": "Studio USB Microphone",
+      "builtInArray": "Built-in Array",
+      "ambientCancellation": "Ambient Cancellation",
+      "ambientDescription": "Isolates human vocal frequencies while suppressing background noise",
+      "speechFlow": "Speech Flow",
+      "autoPlay": "Auto-Play Spoken Translations",
+      "autoPlayDescription": "Speaks translated sentences naturally upon completion",
+      "speechCadence": "Speech Cadence",
+      "speechCadenceDescription": "Pacing for cross-linguistic clarity",
+      "deliberate": "Deliberate",
+      "natural": "Natural",
+      "brisk": "Brisk",
+      "typography": "Typography & Display",
+      "nativeTypography": "Native Indic Typography",
+      "nativeTypographyDescription": "Renders authentic script ligatures using Noto Sans regional fonts",
+      "backend": "Backend Architecture & Connectivity",
+      "pipelineEngine": "Pipeline Engine",
+      "pipelineDescription": "Select the translation pipeline driver",
+      "simulationMode": "Standalone / Simulation Mode",
+      "websocketMode": "Live WebSocket (FastAPI / Node / Go)",
+      "webspeechMode": "Browser WebSpeech (Zero-Server)",
+      "endpoint": "WebSocket Endpoint URL",
+      "endpointDescription": "Any backend implementing standard JSON stream events (e.g., FastAPI, Express, Bhashini, Whisper)",
+      "endpointPlaceholder": "ws://localhost:8000/v1/stream"
+    },
+    "share": {
+      "closeAria": "Close dialog",
+      "copyFullTranscript": "Copy Full Transcript",
+      "exportTextDocument": "Export as Text Document"
+    },
+    "appAria": "Indic Translator Native Desktop Application",
+    "mainNavigation": "Main Navigation"
+  }
+}
